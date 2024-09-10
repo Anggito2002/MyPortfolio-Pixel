@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Anggito Wahyu Adi</title>
+    <link rel="icon" type="image/x-icon" href="img/icon/icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to Google Fonts (or Pixelify Sans if locally hosted) -->
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="#" class="brand">Exito</a>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#home">About</a></li>
+                <li><a href="#work">Work</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <a href="https://github.com/Anggito2002" target="_blank">
+                <img src="img/github-mark-white.png" alt="GitHub Logo" class="github-logo">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <section id="intro">
+        <div class="left">
+            <h1>Hello, I’m <span>Anggito Wahyu Adi</span></h1>
+            <h2>UI/UX<br>Designer</h2>
+            <a href="#contact" class="contact-link">Contact Me</a>
+        </div>
+        <div class="right">
+            <div class="photo-slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="img/pixel-photo.png" alt="Photo 1">
+                    </div>
+                    <div class="slide">
+                        <img src="img/normal-photo.jpg" alt="Photo 2">
+                    </div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+    </section>
+    <section id="home">
+            <div class="about-section">
+        <h2 style="display: flex; align-items: center;"><span style="color: #A438E7; font-size: 48px; ">About</span> <span style="border-top: 3px solid #A438E7; width: 100%; margin-left: 10px;"></span></h2>
+        <p class="typewriter about"></p>
+        <p class="skills">
+            <span>UI/UX DESIGNER</span> &nbsp;&nbsp;&nbsp; 
+            <span>Android Dev</span> &nbsp;&nbsp;&nbsp; 
+            <span>Frontend Developer</span>
+        </p>
+    </section>
+    <section id="work">
+        <div id class="work-section">
+            <h2 style="display: flex; align-items: center;">
+                <span style="color: #E7CB38; font-size: 48px;">Work</span>
+                <span style="border-top: 3px solid #A438E7; width: 100%; margin-left: 10px;"></span>
+            </h2>
+            <p class="typewriter work"></p>
+      </div>
+      <div>
+        <div class="card-container">
+            <div class="card">
+              <div class="tab">
+                <div class="tab-icon"></div>
+                <div class="tab-label">FACETRO</div>
+                <div class="tab-actions">
+                  <span class="minimize"></span>
+                  <span class="maximize"></span>
+                  <span class="close"></span>
+                </div>
+              </div>
+              <div class="card-body">
+                <img src="img/Landing Pages.png" alt="Project 1 Image">
+                <p>VUE.Js, Tailwind CSS</p>
+              </div>
+            </div>
+          
+            <div class="card">
+              <div class="tab">
+                <div class="tab-icon"></div>
+                <div class="tab-label">PROTOTYPE - SMART GIVING</div>
+                <div class="tab-actions">
+                  <span class="minimize"></span>
+                  <span class="maximize"></span>
+                  <span class="close"></span>
+                </div>
+              </div>
+              <div class="card-body">
+                <img src="img/SG.jpg" alt="Project 2 Image">
+                <p>FIGMA</p>
+              </div>
+            </div>
+            
+      </div>
+      <div class="contact-section">
+        <h2 style="display: flex; align-items: center;">
+          <span style="color: #E7CB38; font-size: 48px;">Contact</span>
+          <span style="border-top: 3px solid #A438E7; width: 100%; margin-left: 10px;"></span>
+        </h2>
+        <p>I would love to hear about your project and how I can help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
+<form id="contact-form">
+  <input type="text" name="user_name" placeholder="Name" style="width: 100%; padding: 10px; border: none; border-bottom: 2px solid #ccc; margin-bottom: 20px;">
+  <input type="email" name="user_email" placeholder="Email" style="width: 100%; padding: 10px; border: none; border-bottom: 2px solid #ccc; margin-bottom: 20px;">
+  <textarea name="user_message" placeholder="Message" style="width: 100%; padding: 10px; border: none; border-bottom: 2px solid #ccc; margin-bottom: 20px;"></textarea>
+  <a href="#contact" class="contact-link" onclick="sendEmail(event)">Send Message</a>
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+      </div>
+      <section class="gift-section">
+        <img src="img/gameover.gif" alt="Gift GIF" class="gift-gif">
+        <h2 class="connect-title">Connect With Me</h2>
+        <p class="connect-subtitle">Explore more of my work and let's create something amazing together</p>
+        <div class="logo-container">
+          <a href="https://instagram.com/anggtwa_" target="_blank">
+            <img src="img/instagram.png" alt="Instagram Logo" class="logo">
+          </a>
+          <a href="mailto:itoadi332@gmail.com" target="_blank">
+            <img src="img/gmail.png" alt="Gmail Logo" class="logo">
+          </a>
+          <a href="https://www.linkedin.com/in/anggito-wahyu-adi-18306b21b/" target="_blank">
+            <img src="img/linkedin.png" alt="LinkedIn Logo" class="logo">
+          </a>
+        </div>
+      </section>
+    </section>
+    
+<script src="script.js"></script>
+</body>
+</html>
